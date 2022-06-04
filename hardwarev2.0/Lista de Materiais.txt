@@ -1,0 +1,14 @@
+---- Módulos Prontos ----
+
+- TL866ii Plus
+- Conversor Serial USB FT232RL
+- Motor cortador de grama
+- Bateria chumbo recarregável 12 V
+- Transformador bivolt 15 V com tape central
+- Conversor Buck Step Down 
+- Diodo zener 1N4742A 12V/1W
+- 1x LM741 
+- 1x Atmega328p
+- 1x Botão
+- 4 resistores de 24R 5W
+  

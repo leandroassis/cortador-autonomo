@@ -1,0 +1,34 @@
+   						======== Tarefas ========
+- Fazer o código:
+	- Reinicializar projeto com configurações do microcontrolador e FUSE BITS
+	- Inicialização do microcontrolador e dos periféricos
+	- Desligamento do microcontrolador em caso de pouca bateria (Controle do nivel da bateria)
+	- Ligar e desligar cortador de grama
+	- Comunicação SPI para debug
+		- Ler eeprom
+		- Ler último erro e a função que causou
+		- Ler estado atual dos registradores e variaveis
+		- Rodar funções especificas
+	- Ler distancia 
+		- Girar motor de passo do sensor
+		- Decidir novo destino
+	- Controle dos motores de passo de movimentação
+
+- Cotar componentes
+
+- Comprar componentes
+
+- Simular na protoboard os componentes
+
+- Corrigir esquemático e código
+
+- Fazer pcb:
+	- Associar footprints
+	- Criar footprint CI NOT
+	- Criar footprint do trafo
+	- Criar footprint do conversor buck
+	- Criar footprint da relé
+
+- Comprar peças mecânicas e pedir pcb
+
+- Montar protótipo

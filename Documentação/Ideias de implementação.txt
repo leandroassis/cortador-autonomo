@@ -1,0 +1,14 @@
+---
+- Circuito carregador de bateria chumbo acido com religamento do circuito principal ao fim da carga
+
+- Testes de power up (Check dos motores, check do rtc, check do mpu, check da integridade do mapa,
+check da integridade do firmware (PROGMEM e pgm_read_word(address), check da suspenção, check da EEPROM),
+check do nivel da bateria
+- Mapeamento em memoria EEPROM
+- Hashs armazenadas em EEPROM ou na memoria flash
+- Algoritmo de solve mazing para andar em todos os blocos
+
+- Dissipador de calor nos drivers de motores e reguladores de tensao
+- Ajuste de altura com barra dentada e motor
+
+- Bateria chumbo acido 12V recarregável
