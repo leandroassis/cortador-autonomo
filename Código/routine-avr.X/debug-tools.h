@@ -7,11 +7,12 @@
 
 #include "defines.h"
 
-#ifndef MAIN_H
-#define	MAIN_H
+#ifndef DEBUG_H
+#define	DEBUG_H
+    void get_global_error(return_code *global_error);
+    void set_global_error(return_code *global_error, return_code function_callback);
+    void handle_global_error(return_code *global_error);
 
+    void reset_TWI_peripherals();
+    void halt_process_routine();
 #endif	/* MAIN_H */
-
-void get_global_error(return_code *global_error);
-void set_global_error(return_code *global_error, return_code function_callback);
-void handle_global_error(return_code *global_error);

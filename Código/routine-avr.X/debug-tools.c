@@ -3,16 +3,15 @@
 #include <avr/io.h>
 #include <avr/eeprom.h>
 #include "debug-tools.h"
-#include "defines.h"
 
 void set_global_error(return_code *global_error_pointer, return_code function_callback){
     *global_error_pointer = function_callback;
-    eeprom_write_byte(*global_error_poiter);
+    eeprom_write_byte(GLOBAL_ERROR_ADDRESS, *global_error_pointer);
     handle_global_error(global_error_pointer);
     return;
 }
 /*
-SUCESS = 0,         \
+    SUCESS = 0,         \
     ERROR_MEASURING = 1, \ -> Verifica se é erro de cálculo ou conexão com o lidar
     ERROR_ALLOCATING_MEMORY = 2, \
     MEASURE_OUT_OF_RANGE_ERROR = 3, \     -> Reinicia o sensor
@@ -28,8 +27,20 @@ void handle_global_error(return_code *global_error_pointer){
             halt_process_routine();
             break;
         default:
-            *global_error_pointer = NULL;
+            global_error_pointer = NULL;
             break;
     }
+    return;
+}
+
+void get_global_error(return_code *global_error_pointer){
+    return;
+}
+
+void reset_TWI_peripherals(){
+    return;
+}
+
+void halt_process_routine(){
     return;
 }

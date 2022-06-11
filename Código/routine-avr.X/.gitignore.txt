@@ -1,3 +1,6 @@
 nbproject
 .generated_files
 Makefile
+*.mk
+/dist
+/build
