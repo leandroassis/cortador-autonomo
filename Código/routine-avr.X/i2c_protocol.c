@@ -9,7 +9,8 @@
 #include <util/twi.h>
 #include "i2c.h"
 
-return_code read_TWI(unsigned short* data, unsigned short address);
+return_code read_TWI(unsigned short* data, unsigned short address){
+}
 return_code write_TWI(unsigned short* data, unsigned short address);
 
 return_code get_distance_from_lidar(float *destiny_var){

@@ -21,7 +21,9 @@ int main(){
     step_sequence *steps_5v_motor = NULL, *steps_12v_motor1 = NULL, *steps_12v_motor2 = NULL;
     
     TWSR = 0x00;
-    TWBR = (F_CPU/SCL_CLOCK_FREQ - 16)/2;
+    TWBR = (F_CPU - SCL_CLOCK_FREQ*16)/2*SCL_CLOCK_FREQ;
+
+    
     
     DDRB = 0x07;
     DDRC = 0x0E;
